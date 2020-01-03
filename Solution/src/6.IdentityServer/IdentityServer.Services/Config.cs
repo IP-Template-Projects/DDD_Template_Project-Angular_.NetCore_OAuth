@@ -3,7 +3,7 @@ using IdentityServer4.Models;
 
 namespace IdentityServer.Services
 {
-    public static class Config
+    public static class IdentityServerConfiguration
     {
         public static IEnumerable<IdentityResource> GetIdentityResources()
         {

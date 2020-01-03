@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IdentityServer.Core\IdentityServer.Core.csproj" />
-    <ProjectReference Include="..\IdentityServer.Database\IdentityServer.Database.SqlServer.csproj" />
+    <ProjectReference Include="..\IdentityServer.Database\IdentityServer.Database.SqlServer\IdentityServer.Database.SqlServer.csproj" />
   </ItemGroup>
 
 </Project>
