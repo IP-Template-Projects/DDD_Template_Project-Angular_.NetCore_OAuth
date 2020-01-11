@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using IdentityServer4.Models;
 
-namespace IdentityServer.Services
+namespace IdentityServer.Services.Helpers
 {
     public static class IdentityServerConfiguration
     {

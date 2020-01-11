@@ -37,9 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Tests", "src\1.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Services", "src\2.Business\Business.Services\Business.Services.csproj", "{84DEA9E2-D07E-4D9C-8912-F01BE9FA28A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.Web", "Y:\github\DDD_Template_Project-Angular_.NetCore_OAuth\Solution\src\6.IdentityServer\IdentityServer.Web\IdentityServer.Web.csproj", "{64B4C5CE-D5A3-4769-9454-C128F93462E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.Web", "src\6.IdentityServer\IdentityServer.Web\IdentityServer.Web.csproj", "{64B4C5CE-D5A3-4769-9454-C128F93462E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.Database.SqlServer", "Y:\github\DDD_Template_Project-Angular_.NetCore_OAuth\Solution\src\6.IdentityServer\IdentityServer.Database\IdentityServer.Database.SqlServer\IdentityServer.Database.SqlServer.csproj", "{938ADAE8-200A-4C95-BFE1-A1F441DF1397}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.Database.SqlServer", "src\6.IdentityServer\IdentityServer.Database\IdentityServer.Database.SqlServer\IdentityServer.Database.SqlServer.csproj", "{938ADAE8-200A-4C95-BFE1-A1F441DF1397}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rules", "src\3.Shared\Rules\Rules.csproj", "{9510850E-9713-459F-9A26-4A2320718C73}"
 EndProject

@@ -1,20 +1,12 @@
-﻿using IdentityServer.Core.Helpers;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace IdentityServer.Database.SqlServer
 {
-    public class OidcSqlServerContextFactory : IDesignTimeDbContextFactory<OidcSqlServerContext>
+    public class OidcSqlServerContextFactory : OidcSqlServerContextFactoryBase<OidcSqlServerContext>
     {
-        public OidcSqlServerContext CreateDbContext(string[] args)
+        protected override OidcSqlServerContext CreateNewInstance(DbContextOptions<OidcSqlServerContext> options)
         {
-            var config = ConfigurationResolver.GetConfiguration();
-            var optionsBuilder = new DbContextOptionsBuilder<OidcSqlServerContext>();
-            optionsBuilder.UseSqlServer(config.GetConnectionString("SQLServer"),
-                builder => builder.MigrationsAssembly(typeof(OidcSqlServerContext).Assembly.FullName));
-            var context = new OidcSqlServerContext(optionsBuilder.Options);
-            return context;
+            return new OidcSqlServerContext(options);
         }
     }
 }

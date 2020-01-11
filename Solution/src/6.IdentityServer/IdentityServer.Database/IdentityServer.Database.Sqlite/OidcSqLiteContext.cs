@@ -9,7 +9,7 @@ namespace IdentityServer.Database.SQLite
 {
     public class OidcSqLiteContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>
     {
-        public OidcSqLiteContext(DbContextOptions options) : base(options)
+        public OidcSqLiteContext(DbContextOptions<OidcSqLiteContext> options) : base(options)
         {
 
         }

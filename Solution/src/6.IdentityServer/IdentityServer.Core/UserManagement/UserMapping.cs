@@ -7,8 +7,7 @@ namespace IdentityServer.Core.UserManagement
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.Property(e => e.FirstName).IsRequired();
-            builder.Property(e => e.LastName).IsRequired();
+            builder.Property(e => e.Name).IsRequired();
         }
     }
 }

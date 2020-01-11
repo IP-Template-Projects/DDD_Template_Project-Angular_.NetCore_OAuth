@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace IdentityServer.Database.SqlServer
 {
-    public class OidcSqlServerContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>, IDbContext
+    public class OidcSqlServerContext : IdentityDbContext<User, IdentityRole<Guid>, Guid>
     {
-        public OidcSqlServerContext(DbContextOptions options) : base(options)
+        public OidcSqlServerContext(DbContextOptions<OidcSqlServerContext> options) : base(options)
         {
 
         }
